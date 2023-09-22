@@ -7,9 +7,9 @@ public class Movimiento : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
-    private float playerSpeed = 2.0f;
-    private float jumpHeight = 3.0f;
-    private float gravityValue = -9.81f;
+    public float playerSpeed = 6.0f;
+    public float jumpHeight = 1.0f;
+    public float gravityValue = -9.81f;
 
     private void Start()
     {
@@ -18,6 +18,7 @@ public class Movimiento : MonoBehaviour
 
     void Update()
     {
+        if(GameManager.activado==false)return;
         groundedPlayer = controller.isGrounded;
         if (groundedPlayer && playerVelocity.y < 0)
         {
