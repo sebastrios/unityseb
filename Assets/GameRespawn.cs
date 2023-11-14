@@ -9,7 +9,7 @@ public class GameRespawn : MonoBehaviour
     {
         if(transform.position.y < threshold)
         {
-            transform.position = new Vector3(0.91f, 8.327f, -11.09486f);
+            transform.position = new Vector3(11.55f, 9.32f, -103.73f);
         }
     }
     }
